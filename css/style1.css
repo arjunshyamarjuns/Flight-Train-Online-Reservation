@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+    padding: 0 !important;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+#banner 
+{
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+    color: #fff;
+    padding-top: 5%;
+}
+.bottom-img
+{
+    width: 100%;
+}
+.form2
+{
+   box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+  background-image: linear-gradient(to right,	#ffcccb,#ffcccb ); 
+}

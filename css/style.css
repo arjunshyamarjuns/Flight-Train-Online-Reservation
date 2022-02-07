@@ -1,0 +1,246 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+    padding: 0 !important;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+#banner
+{
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+    color: #fff;
+    padding-top: 5%;
+}
+.promo
+{
+    font-size: 38px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.bottom-img
+{
+    width: 100%;
+}
+#services
+{
+    padding: 80px 0;
+}
+.service-image
+{
+    width: 100px;
+    margin-top: 20px;
+}
+.services
+{
+    padding: 20px;
+}
+.services h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+.title::before
+{
+    content: '';
+    background: #8B0000;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after
+{
+    content: '';
+    background: #8B0000;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+#form .select
+{
+    box-shadow: 30px;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,	#ffcccb,#ffcccb );
+}
+#form .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+}
+#form .btn-secondary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+}
+#line .hr
+hr
+{
+    background-color: #000000;
+}
+
+#Booking .btn-secondary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,	#000000,#000000);
+}
+#Booking .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+}
+.form1
+{
+   box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+  background-image: linear-gradient(to right,	#ffcccb,#ffcccb );
+} 
+#payment .title1::before
+{
+    content: '';
+    background: #8B0000;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title1::after
+{
+    content: '';
+    background: #8B0000;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(22.5px);
+}
+.form2
+{
+   box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+  background-image: linear-gradient(to right,	#ffcccb,#ffcccb );
+} 
+
+#payment .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+}
+#social-media
+{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img
+{
+    width: 75px;
+    transition: 0.5s;
+}
+.social-icons a:hover img
+{
+    transform: translateY(-10px);
+}
+#footer
+{
+     background-image: linear-gradient(to right,#8B0000,#000000);
+    color: #fff;
+}
+.footer-img
+{
+    width: 100%;
+}
+.footer-box
+{
+    padding: 40px;
+}
+.footer-box .fa
+{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right,	#8B0000,#000000);
+}
+hr
+{
+    background-color: #fff;
+}
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}

@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>
+Reservation system
+</title>
+<script language="JavaScript">
+    function payy()
+    {
+        var nam,num,cv;
+        nam=document.formvalid.txt12.value;
+        num=document.formvalid.txt13.value;
+        cv=document.formvalid.txt14.value;
+        if(num.length<16||num.length>16)
+                alert("Card Number must contain 16 digits, try again");
+        else if(cv.length>3||cv.length<3)
+                alert("Cvv Number contains only 3 digits, try again");
+        else if(isNaN(cv))
+                alert("CVV is a number, try again");
+        else if(nam=="")
+            {
+                alert("Enter a valid card number");
+            }
+        else
+            {
+            alert("Thank you for your payment");
+    alert("Enjoy your journey");
+            }
+    }
+    function formo()
+    {
+        var nam1,dat,tim,nam2;
+        nam1=document.formbook.txt00.value;
+        nam2=document.formbook.txt01.value;
+        dat=document.formbook.txt02.value;
+        tim=document.formbook.txt03.value;
+        if(nam1==""||nam2==""||dat==""||tim=="")
+            alert("enter the correct location");
+        else
+            {
+                alert("Do the payment by clicking on Go to Payment ");
+            }
+    }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/sa.png"/>
+</head>
+<body>
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img src="img/Untitled-1.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">SERVICES</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#footer">ABOUT US</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="my%20account.html">MY ACCOUNT</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="login1.html">LOGIN</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </section>
+    <section id="banner">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-6">
+            <p class="promo">ONLINE RESERVATION SYSTEM</p>
+            <p>Book your flight and train tickets with India's leading flight and train booking company since the year 2000. While booking flights and trains with My-Reservation System, you can expect the ultimate online booking experience. With premium customer service, 24/7 dedicated helpline for support, and over 5 million delighted customers, My-Reservation System takes great pride in enabling customer satisfaction. With a cheapest rates guarantee, book your tickets at the lowest airfares. Avail great offers, exclusive deals for loyal customers and get instant updates for your flight status and fare drop.</p>
+            </div> 
+            <div class="col-md-6 text-center">
+            <img src="img/travel-clipart-transparent-16.png" class="img-fluid">
+            </div>
+            </div>
+        </div>
+    <img src="img/wave-bg.png" class="bottom-img">
+    </section>
+    <section id="services">
+    <div class="container text-center">
+        <h1 class="title">WHAT WE HAVE HERE ?</h1>
+        <div class="row text-center">
+        <div class="col-md-6 services">
+            <img src="img/arjairplane-vector-2638315.png" class="service-image">
+            <h4>FLIGHT BOOKING</h4>
+            <p>For the best flights with the cheapest rates, book through here</p>
+            </div>
+        <div class="col-md-6 services">
+            <img src="img/dsa.png" class="service-image">
+            <h4>TRAIN BOOKING</h4>
+            <p>For the best domestic trains with the cheapest rates, book through here</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="container text-center">
+        <div class="row text-center">
+        <div class="col-md-6 form">
+    <select id="Flight" class="select">
+  <option value="Book Flight Ticket">Book Flight Ticket</option>
+  <option value="One Way">One Way</option>
+  <option value="Round trip">Round Trip</option>
+</select>
+            <br>
+            <br>
+         <a href="#Booking" class="btn btn-secondary">submit</a>
+            </div>
+            <div class="col-md-6 form">
+        <select id="trains" class="select">
+  <option value="Book Train Ticket">Book Train Ticket</option>
+  <option value="General">General</option>
+  <option value="Tatkal">Tatkal</option>
+  <option value="Premimum">Premium</option>
+</select>
+                <br>
+            <br>
+           <a href="#Booking" class="btn btn-primary">submit</a>
+        </div>
+        </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="line">
+        <div class="container">
+        <hr>
+        </div>
+    </section>
+    <section id="Booking">
+        <br>
+        <br>
+        <br>
+        <div class="container text-center ">
+       <h1 class="title">BOOKING</h1>
+    <form name="formbook" action="regn.php" method="get">
+        <b>From : </b> 
+    <input type="text" class="form1" id="text" name="txt00">
+        <b>To :</b>
+    <input type="text" class="form1" id="Text" name="txt01">
+        <b>Date :</b>
+    <input type="Date" class="form1" id="Date" name="txt02">
+        <br>
+        <br>
+        <b>Time :</b>
+    <input type="Time" class="form1" id="Time" name="txt03">
+        <b>No. of Passengers :</b>
+    <select id="passengers" class="form1">
+            <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="3+">3+</option>
+            </select>
+        <br>
+        <br>
+        <b>After selecting the options click Done</b>
+        <br>
+        <br>
+        <input type="button" value="Done" onclick="formo()" class="btn-secondary">
+        <br>
+        <br>
+         <input type="checkbox" >Remember me
+            </form>
+            <br>
+    <a href="#Payment" class="btn btn-primary">Go To Payment</a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="line">
+        <div class="container">
+    <hr>
+        </div>
+    </section>
+        <section id="Payment">
+        <br>
+        <br>
+        <br>
+        <div class="container text-center ">
+       <h3 class="title1">ENTER YOUR CARD DETAILS</h3>
+        <form name="formvalid" action="regn.php" method="get">
+            <b>Name on Card :</b>  
+    <input type="text" class="form2" name="txt12">
+            <b>Card Number :</b>
+    <input type="number" class="form2" name="txt13">
+            <b>Cvv number :</b>
+    <input type="password" class="form2" name="txt14">
+            <br>
+            <br>
+            <input type="checkbox">Remember me
+            <br>
+            <br>
+            <input type="button" value="Pay" onclick="payy()" class="btn btn-primary">
+            </form>
+             <br>
+            <br>
+            <br> 
+            </div>
+        </section>
+    <br>
+    <br>
+    <br>
+    <section id="line">
+        <div class="container">
+    <hr>
+        </div>
+    </section>
+    <section id="social-media">
+    <div class="container text-center">
+    <p>FIND US ON SOCIAL MEDIA</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><img src="img/Splash-Facebook-Icon-Png-715x715.png"></a>
+        <a href="https://www.instagram.com/"><img src="img/Splash-Instagraam-Icon-Png-715x715.png"></a>
+        <a href="https://web.whatsapp.com/"><img src="img/Splash-Whatsapp-Icon-Png-715x715.png"></a>
+        <a href="https://twitter.com/login?lang=en"><img src="img/Twitter-Splash-715x715.png"></a>
+        </div>
+        </div>
+    </section>
+    <section id="footer">
+    <img src="img/bg-wave1.png" class="footer-img">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-6 footer-box">
+            <h5 class="foote">ABOUT US</h5>
+            <p>The leading player in online flight and train bookings in India, My-Reservation System offers great offers, some of the lowest airfares, exclusive discounts and a seamless online booking experience. Flight and train bookings through the desktop or mobile site is a delightfully customer friendly experience, and with just a few clicks you can complete your booking. With features like Instant Discounts, MyWallet and many more, the overall booking experience with My-Reservation System constantly adds value to its product and continues to offer the best to its customers.</p>
+            </div>
+            <div class="col-md-6 footer-box">
+            <h5 class="foote">CONTACT</h5>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i>  Lovely Professional University, Phagwara</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> +91 7306326388</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i> my-reservation@lpu.co.in</p>
+            </div>    
+            </div>
+            <hr>
+            <p class="copyright">copyright protected</p>
+        </div>
+    </section>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>
